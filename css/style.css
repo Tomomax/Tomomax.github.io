@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	max-width: 1300px;
+	margin: 110px auto;
+	background-color: black;
+}
+
+#main{
+	position: relative;
+}
+
+#game{
+	float: left;
+	width: 900px;
+	height: 700px;
+	border: solid white 9px;
+	z-index: 0;
+}
+
+#scoreboard{
+	position: absolute;
+	display: inline;
+	margin-left: 20px;
+	padding: 10px;
+	float: left;
+	width: 300px;
+	height: 680px;
+	border: solid white 9px;
+	z-index: 0;
+}
+
+@font-face{
+	font-family: bit;
+	src: url("../fonts/8_bit.woff");
+}
+
+#sc{
+	font-family: bit;
+	color: #FFFFFF;
+	padding: 20px;
+	border: solid white 2px;
+	font-size: 20px;
+}
+
+#fr{
+	
+}
+
