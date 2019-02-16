@@ -21,15 +21,21 @@ body{
 	z-index: 0;
 }
 
+#scbackground{
+	position: absolute;
+	display: inline;
+	margin-left: 10px;
+}
+
 #scoreboard{
 	position: absolute;
 	display: inline;
-	margin-left: 20px;
-	padding: 10px;
+	margin-top: 40px;
+	margin-left: 50px;
+	padding: 20px;
 	float: left;
 	width: 300px;
-	height: 680px;
-	border: solid white 9px;
+	height: 610px;
 	z-index: 0;
 }
 
@@ -40,10 +46,9 @@ body{
 
 #sc{
 	font-family: bit;
-	color: #FFFFFF;
-	padding: 20px;
-	border: solid white 2px;
-	font-size: 20px;
+	color: #000000;
+	font-size: 30px;
+	text-shadow: 2px 2px #FFFFFF;
 }
 
 #fr{
