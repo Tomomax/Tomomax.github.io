@@ -5,13 +5,52 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="jQuery/jquery-3.3.1.min.js"></script>
 	<script type="application/javascript"></script>
+	<script>
+		$(document).ready(function(){
+			$("#pause").hide();
+			
+			$("#end").hide();
+			$("#continue").hide();
+			$("#go").hide();
+			$("#beat").hide();
+			$("#next").hide();
+			$("#restart").hide();
+		});
+	</script>
 </head>
 <body onload="drawIt()">
 	<div id="main">
-	
 		<div id="game">
 			<canvas id="canvas" width="900" height="700"></canvas>
 			<script src="jss.js"></script>
+		</div>
+		
+		<div id="black">
+		</div>
+		<div id="end">
+			<div id="continue">
+				<p>You lost all your lives. Continue?</p> <br />
+				<p id="yes">Yes</p> <p id="no">No</p>
+			</div>
+		</div>
+		<div id="beat">
+			<p>You won!</p>
+		</div>
+		<div id="restart">
+			<p>Restart</p>
+		</div>
+		<div id="next">
+			<p>Next</p>
+		</div>
+		<div id="go">
+			<p>GAME OVER</p>
+		</div>
+		
+		<div id="start">
+			<p>Press the SPACEBAR to begin</p>
+		</div>
+		<div id="pause">
+			<p>Paused</p>
 		</div>
 		
 		<div id="scbackground">
@@ -19,20 +58,16 @@
 		</div>
 		
 		<div id="scoreboard">
-			
 			<div id="sc">
-				<p>High Score:</p> </br>
+				<p>High Score: </br> <p id="tocke">0</p></p> </br>
 			</div>
-			
-			<div id="fr">
-				<img src="slike/fire.png"></src>
-			</div>
-			
-			<div id="ic">
-				<img src="slike/ice.png"></src>
+			<div id="life">
+				<p>Lives: </p>
+				<img id="l1" src="slike/life.png">
+				<img id="l2" src="slike/life.png">
+				<img id="l3" src="slike/life.png">
 			</div>
 		</div>
-		
 	</div>
 </body>
 </html>
